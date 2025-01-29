@@ -1,0 +1,116 @@
+/* General styling for the page */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    /* overflow: hidden; */
+  }
+  
+  /* Register container */
+  .register-container {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  /* Video background */
+  #background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Keeps the video behind the form */
+  }
+  
+  /* Form container */
+  .register-form {
+    position: relative;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 20%; /* Reduced width for compactness */
+    text-align: left; /* Align form elements to the left */
+    transition: transform 0.3s ease;
+  }
+  
+  /* Hover effect on form */
+  .register-form:hover {
+    transform: scale(1.02); /* Slight scaling for interactivity */
+  }
+  
+  /* Form labels and inputs */
+  .register-form label {
+    display: inline-block;
+    width: 90px; /* Reduced width of labels */
+    margin-right: 8px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Input fields */
+  .register-form input {
+    display: inline-block;
+    width: calc(100% - 20px); /* Adjusted width to match label */
+    padding: 6px;
+    margin-bottom: 12px; /* Reduced margin for compactness */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #f9f9f9;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+  }
+  
+  /* Focus effect on input fields */
+  .register-form input:focus {
+    border-color: #4e0d4b;
+    outline: none;
+    background: #eaeaea;
+  }
+  
+  /* Submit button with animation */
+  .register-form button {
+    display: block;
+    width: 97%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(45deg, #6a11cb, #2575fc);
+    color: white;
+    font-size: 14px; /* Smaller font size for compactness */
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin-top: 10px;
+  }
+  
+  /* Button hover effect */
+  .register-form button:hover {
+    background: linear-gradient(45deg, #4e0d4b, #9c27b0);
+    transform: scale(1.05);
+  }
+  
+  /* Link styling */
+  .register-form p {
+    margin-top: 15px; /* Reduced margin for compactness */
+    font-size: 12px; /* Smaller font size */
+  }
+  
+  .register-form p a {
+    color: #2575fc;
+    text-decoration: none;
+  }
+  
+  .register-form p a:hover {
+    text-decoration: underline;
+  }
+  
+  .register-form button:focus {
+    outline: none;
+  }
+  
